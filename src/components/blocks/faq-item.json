@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_blocks_faqs",
+  "collectionName": "components_blocks_faq_items",
   "info": {
-    "displayName": "Faq",
+    "displayName": "FaqItem",
     "icon": "question",
     "description": ""
   },
@@ -10,7 +10,7 @@
     "title": {
       "type": "string"
     },
-    "faq": {
+    "questionAnswer": {
       "type": "component",
       "repeatable": true,
       "component": "shared.question-answer"

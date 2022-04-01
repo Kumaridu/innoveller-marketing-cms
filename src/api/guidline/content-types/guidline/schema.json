@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "shwe_booking_articles",
+  "collectionName": "guidlines",
   "info": {
-    "singularName": "shwe-booking-article",
-    "pluralName": "shwe-booking-articles",
-    "displayName": "ShweBookingArticle",
+    "singularName": "guidline",
+    "pluralName": "guidlines",
+    "displayName": "Guidline",
     "description": ""
   },
   "options": {
@@ -17,30 +17,32 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "unique": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string",
+      "unique": false
     },
     "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "uid",
       "targetField": "title"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "blocks.faq",
-        "blocks.guidlines"
-      ],
-      "required": true,
+    "guidlineItems": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "component": "blocks.guidline-item"
     }
   }
 }

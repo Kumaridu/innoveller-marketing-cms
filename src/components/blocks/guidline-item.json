@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_blocks_guidlines",
+  "collectionName": "components_blocks_guidline_items",
   "info": {
-    "displayName": "Guidline",
-    "icon": "allergies",
+    "displayName": "GuidlineItem",
+    "icon": "bullhorn",
     "description": ""
   },
   "options": {},
@@ -10,10 +10,7 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
-    },
-    "guidlineImage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -23,6 +20,9 @@
         "videos",
         "audios"
       ]
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "mm_bus_articles",
+  "collectionName": "faqs",
   "info": {
-    "singularName": "mm-bus-article",
-    "pluralName": "mm-bus-articles",
-    "displayName": "MmBusArticle",
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "Faq",
     "description": ""
   },
   "options": {
@@ -23,7 +23,7 @@
         }
       },
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "slug": {
       "pluginOptions": {
@@ -32,20 +32,18 @@
         }
       },
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": false
     },
-    "blocks": {
+    "faqItems": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "dynamiczone",
-      "components": [
-        "blocks.faq",
-        "blocks.guidlines"
-      ],
-      "required": true
+      "component": "blocks.faq-item"
     }
   }
 }

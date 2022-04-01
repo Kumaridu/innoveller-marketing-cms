@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shwe_booking_articles",
+  "info": {
+    "singularName": "shwe-booking-article",
+    "pluralName": "shwe-booking-articles",
+    "displayName": "ShweBookingArticle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.faq",
+        "blocks.guidlines"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

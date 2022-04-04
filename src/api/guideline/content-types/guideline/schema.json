@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guidelines",
+  "info": {
+    "singularName": "guideline",
+    "pluralName": "guidelines",
+    "displayName": "Guideline"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "guidelineItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.guidline-item"
+    }
+  }
+}

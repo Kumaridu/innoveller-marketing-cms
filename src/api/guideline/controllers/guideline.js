@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  guidline controller
+ *  guideline controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::guidline.guidline');
+module.exports = createCoreController('api::guideline.guideline');

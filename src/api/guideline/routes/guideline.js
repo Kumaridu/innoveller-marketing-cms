@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * guidline router.
+ * guideline router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::guidline.guidline');
+module.exports = createCoreRouter('api::guideline.guideline');
